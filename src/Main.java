@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -631,57 +633,89 @@ public class Main {
             }
         }
     }
-     public static void task36(){
-         System.out.println("Задача 1");
 
-         int[] numbers = new int[3];
-         numbers[0] = 1;
-         numbers[1] = 2;
-         numbers[2] = 3;
+    public static void task36() {
+        System.out.println("Задача 1");
 
-         for (int i = 0; i <numbers.length; i++) {
-             System.out.println(numbers[i]);
-         }
+        int[] numbers = new int[3];
+        numbers[0] = 1;
+        numbers[1] = 2;
+        numbers[2] = 3;
 
-
-         float[] fractionalNumbers = {1.57f,7.654f,9.986f};
-
-         for (int i = 0; i <fractionalNumbers.length; i++) {
-             System.out.println(fractionalNumbers[i]);
-         }
-
-         float[] analysis = new float[2];
-         analysis [0] = 25.897f;
-         analysis [1] = 35.213f;
-         for (int i = 0;i < analysis.length;i++) {
-             System.out.println(analysis[i]);
-         }
-         System.out.println("Задача 2");
-
-         System.out.print(numbers[0] + "," + numbers [1] + "," + numbers [2] );
-         System.out.println();
-         System.out.print(fractionalNumbers[0] + "," + fractionalNumbers[1] + "," + fractionalNumbers[2] );
-         System.out.println();
-         System.out.print(analysis[0] + "," + analysis[1]);
-         System.out.println();
-
-         System.out.println("Задача 3");
-
-         System.out.print(numbers[2] + "," + numbers [1] + "," + numbers [0] );
-         System.out.println();
-         System.out.print(fractionalNumbers[2] + "," + fractionalNumbers[1] + "," + fractionalNumbers[0]);
-         System.out.println();
-         System.out.print(analysis[1] + "," + analysis[0]);
-         System.out.println();
-
-         System.out.println("Задача 4");
-
-         while (numbers[0] < 2) {
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.println(numbers[i]);
+        }
 
 
-         }
+        float[] fractionalNumbers = {1.57f, 7.654f, 9.986f};
 
-         }
+        for (int i = 0; i < fractionalNumbers.length; i++) {
+            System.out.println(fractionalNumbers[i]);
+        }
+
+        float[] analysis = new float[2];
+        analysis[0] = 25.897f;
+        analysis[1] = 35.213f;
+        for (int i = 0; i < analysis.length; i++) {
+            System.out.println(analysis[i]);
+        }
+        System.out.println("Задача 2");
+        int[] r = new int[]{1, 2, 3};
+        for (int i = 0; i < r.length; i++) {
+            System.out.print(r[i]);
+            if (i != r.length - 1) {
+
+                System.out.print(" ,");
+            }
+        }
+
+            System.out.println();
+
+        System.out.println("Задача 3");
+
+        int[] s =  new int[] {1, 2, 3};
+        for (int i = s.length - 1; i >= 0 ; i--) {
+            System.out.print(s[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        float[] a = {1.57f, 7.654f, 9.986f};
+        for (int i = a.length - 1; i >= 0; i--) {
+            System.out.print(a[i]);
+            if (i != 0 ) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+
+        int[] arbitraryArray = {10, 20, 30, 40, 50};
+        for (int i = arbitraryArray.length - 1; i >= 0 ; i--) {
+            System.out.print(arbitraryArray[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println();
+
+        System.out.println("Задача 4");
+
+        int[] arr = {1, 2, 3};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 != 0) {
+                arr[i] += 1;
+            }
+        }
+     System.out.println(Arrays.toString(arr));
+    }
+
+
+
+
+
 
      public static void task37(){
 
