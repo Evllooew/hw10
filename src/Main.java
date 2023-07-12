@@ -40,7 +40,7 @@ public class Main {
         task36();
         task37();
         task38();
-        task39();
+
 
 
     }
@@ -722,8 +722,8 @@ public class Main {
      }
      public static void task38(){
 
-     }
-     public static void task39(){
+
+
 
      }
 }
